@@ -7,5 +7,9 @@ class Settings(BaseSettings):
     database_url: str
     environment: str = "production"
     title: str = "API"
+    secret_key: str
+    algorithm: str
+    access_token_expire_minutes: int
+
 
 settings = Settings()
